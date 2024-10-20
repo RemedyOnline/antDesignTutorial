@@ -1,7 +1,3 @@
-import React from 'react'
-// import sideItems from '../constants/sideItems'
-import { Menu } from 'antd'
-
 import {
     ContainerOutlined,
     DesktopOutlined,
@@ -26,13 +22,13 @@ import { icons } from 'antd/es/image/PreviewGroup';
 
 const sideItems = [
     {
-        key: 'sub1-dashboard',
+        key: 'sub1 - dashboard',
         label: 'Dashboard',
         icon: <DesktopOutlined />,
         children: [
             {
                 key: 'g1',
-                // type: 'group',
+                type: 'group',
                 label: 'Analytics',
                 icon: <PieChartOutlined />,
                 children: [
@@ -50,7 +46,7 @@ const sideItems = [
             },
             {
                 key: 'g2',
-                // type: 'group',
+                type: 'group',
                 label: 'Trends',
                 icon: <ContainerOutlined />,
                 children: [
@@ -69,12 +65,12 @@ const sideItems = [
         ]
     },
     {
-        key: 'sub2-user',
+        key: 'sub2 -user',
         label: 'My Account',
         icon: <MenuFoldOutlined />,
         children: [
             {
-                // type: 'group',
+                type: 'group',
                 label: 'Edit Account',
                 icon: <AccountBookFilled />,
                 children: [
@@ -131,24 +127,4 @@ const sideItems = [
     }
 ]
 
-// export default sideItems;
-
-const MySidebarr = () => {
-
-    const onClick = (clk) => {
-        console.log('clicked', clk)
-    };
-
-    return (
-        <div>
-            <Menu
-                onClick={onClick}
-                defaultSelectedKeys={['overview:1-line']}
-                defaultOpenKeys={['sub1-dashboard']}
-                mode='inline'
-                items={sideItems} />
-        </div>
-    )
-}
-
-export default MySidebarr
+export default sideItems;

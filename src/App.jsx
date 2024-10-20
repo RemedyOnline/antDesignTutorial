@@ -3,7 +3,7 @@ import { Button } from 'antd';
 import { Flex, Layout } from 'antd';
 import Sidebar from './components/Sidebar';
 import Navbar from './components/Navbar';
-import MySidebar from './components/MySidebar';
+import MySidebarr from './components/MySidebar';
 const { Header, Footer, Sider, Content } = Layout;
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
             <Footer className='text-center text-white bg-[#4096ff] flex justify-center'>Footer</Footer>
           </Layout>
           <Sider>
-            <MySidebar />
+            <MySidebarr />
           </Sider>
         </Layout>
       </Layout>
